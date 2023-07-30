@@ -34,6 +34,8 @@ class User:
                     _countLetters += 1
             if _countLetters > 2:
                 self.__password = password
+            else:
+                print('Пароль должен содержать хотя бы три буквы')
 
     def get_login(self):
         return self.__login
